@@ -1,0 +1,110 @@
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container > div {
+  opacity: 0;
+  display: none;
+  .stat-panel {
+    padding: 12px;
+    .panel-heading {
+      text-align: center;
+    }
+    .panel-body {
+      font-size: 44px;
+      text-align: center;
+    }
+  }
+  .panel-filter {
+    .panel-heading {
+      cursor: pointer;
+      .filter-toggle {
+        transition: all 0.3s linear;
+        transform: rotate(0deg);
+        margin-top: -4px;
+        &.up {
+          transform: rotate(180deg);
+        }
+      }
+    }
+    .filter-bar {
+      height: 0;
+      overflow: hidden;
+      transition: all 0.3s linear;
+      .col-md-6 {
+        margin-top: 18px;
+        &:first-child {
+          margin-top: 0;
+        }
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  #logTable {
+    tr {
+      td {
+        cursor: pointer;
+        &:first-child {
+          font-weight: bold;
+        }
+        &:nth-child(2) {
+          font-weight: bold;
+        }
+      }
+      &.bg-info:hover {
+        background-color: #e2f6ff;
+      }
+      &.bg-warning {
+        background-color: #f5f1de;
+        &:hover {
+          background-color: #fffbe8;
+        }
+      }
+      &.bg-danger:hover {
+        background-color: #ffecec;
+      }
+    }
+  }
+  .pagination {
+    width: 100%;
+    text-align: center;
+    .btn {
+      background: #FFFFFF;
+      color: #4B8BFA;
+      padding: 12px;
+      min-width: 44px;
+      height:44px;
+      font-weight: bold;
+      border-radius: 50%;
+      margin: 0 4px;
+      &.active {
+        background: #4B8BFA;
+        color: #fff;
+        &:hover {
+          background: #5271e7;
+        }
+      }
+      &:hover {
+        background: #efefef;
+      }
+    }
+  }
+}
+.modal {
+  background: rgba(0, 0, 0, 0.8);
+  &#progressModal {
+    .progress {
+      margin: 20px 0;
+      height: 20px;
+    }
+  }
+}
+svg {
+  width: 100% !important;
+}

@@ -1,0 +1,39 @@
+{
+  "name": "OpenLog",
+  "version": "1.0.0",
+  "description": "An easy way to aggregate client side logging",
+  "main": "server/server.js",
+  "bin": {
+    "openlog": "./server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MarshallOfSound/OpenLog.git"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Samuel Attard",
+  "license": "Apache 2",
+  "dependencies": {
+    "basic-auth": "^1.0.2",
+    "body-parser": "^1.13.1",
+    "compression": "^1.5.0",
+    "ejs": "^2.3.1",
+    "express": "^4.12.4",
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-copy": "^0.8.0",
+    "grunt-contrib-cssmin": "^0.12.3",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-uglify": "^0.9.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-text-replace": "^0.4.0",
+    "moment": "^2.10.3",
+    "sync-exec": "^0.5.0",
+    "tingodb": "^0.3.4"
+  }
+}

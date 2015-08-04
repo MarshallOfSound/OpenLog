@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Open Log</title>
+
+    <link href="/css/lib.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/core.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-inverse-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="javascript:void(0)">Open Log</a>
+        </div>
+        <div class="navbar-collapse collapse navbar-inverse-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="#stats" data-router>Stats</a></li>
+                <li><a href="#logs" data-router>Logs</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <div data-route="stats">
+            <div class="jumbotron">
+                <h1>Welcome to OpenLog</h1>
+                <p>Below you can see some pretty statistics for your instance of OpenLog, if you click that Logs button you can start looking at all those errors.</p>
+                <p><a class="btn btn-primary btn-lg" href="#logs" data-router>View Logs</a></p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 col-xs-12 stat-panel">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Total Logs</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12 stat-panel">
+                    <div class="panel panel-info">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Info Logs</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12 stat-panel">
+                    <div class="panel panel-warning">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Warning Logs</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-sm-6 col-xs-12 stat-panel">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Error logs</h3>
+                        </div>
+                        <div class="panel-body"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Logging History</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="past-graph" style="height: 300px; width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">High Frequency Pages</h3>
+                        </div>
+                        <div class="panel-body">
+                            <table class="table table-striped" id="errorFrequencyTable">
+                                <tr>
+                                    <th>Page</th>
+                                    <th width="200px">Error Frequency</th>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-route="logs">
+            <h1>Log Viewer</h1>
+            <div class="panel panel-info panel-filter">
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        <b>Log Filters:</b>
+                        <i class="mdi-navigation-expand-more pull-right filter-toggle"></i>
+                    </h3>
+                </div>
+                <div class="filter-bar">
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="errorType">Log Type</label>
+                                <select class="form-control" id="errorType">
+                                    <option value="*">All</option>
+                                    <option value="info">Info</option>
+                                    <option value="warn">Warnings</option>
+                                    <option value="error">Errors</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="errorPage">Page</label>
+                                <select class="form-control" id="errorPage">
+                                    <option value="*">All</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label>Auto-Grouping</label>
+                                <div class="togglebutton">
+                                    <label>
+                                        <input type="checkbox" checked="" id="autoGrouping"> On / Off
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="messageRegEx">Message</label>
+                                <input type="text" class="form-control" placeholder="Supports full regex" id="messageRegEx" />
+                            </div>
+                            <div class="col-md-12">
+                                <a class="btn btn-success pull-right clear-filter">Clear Filter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Logs</h3>
+                </div>
+                <div class="panel-body">
+                    <table class="table" id="logTable">
+                        <tr>
+                            <th width="44px">ID</th>
+                            <th width="90px">Type</th>
+                            <th>Message</th>
+                            <th width="50px">Count</th>
+                            <th width="190px">Reported</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="pagination"></div>
+        </div>
+        <div data-route="log-detail">
+            <h1><a href="#logs" data-router class="btn btn-info pull-right">Back</a>Log Details</h1>
+            <br>
+            <div class="well log_detail_container">
+                <h2>Logs Details for Log #<span class="text-info log_id"></span></h2>
+                <h4>Type: <small class="log_type"></small></h4>
+                <h4>Timestamp: <small class="log_time"></small></h4>
+                <h4>Page: <small class="log_page"></small></h4>
+                <div class="log_quantity">
+                    <h4>Occurrences: <small>This error or similar errors have occurred <span class="log_quantity_number text-info"></span> times</small></h4>
+                </div>
+                <h4>Message: <small class="log_message"></small></h4>
+                <h4>Stack Trace: </h4>
+                <pre class="log_trace"></pre>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="progressModal" tabindex="-1" role="dialog" aria-labelledby="csvModal" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title" id="myModalLabel">Loading OpenLog Data</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="progress" style="margin-top: 8px;">
+                        <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%">
+                            <span class="sr-only">Loading</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/lib.min.js"></script>
+    <script src="/js/core.min.js"></script>
+</body>
+</html>
