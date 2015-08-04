@@ -9,16 +9,19 @@ Installation
 
 #####Simple
 1. Download the latest release from the [Github Releases](https://github.com/MarshallOfSound/OpenLog/releases)
-2. Include the `dist/capture.min.js` file on any page you want to capture the errors and logs for
-    ````html
+2. Include the `dist/capture.min.js` file on any page you want to capture the errors and logs for  
+
+    ```html
     <script src="path/to/capture.min.js" type="text/javascript" language="javascript"></script>
-    ````
+    ```  
 3. Upload the entire release directory to your server and from the root OpenLog directory run
+
     ````bash
     npm install
     node server/server.js
     ````
 4. Access your instance of OpenLog at http://your-domain.here:4783, the default login credentials are
+
     ````
     username: openlog
     password: password
@@ -29,6 +32,7 @@ Installation
 1. Download the latest release from the [Github Releases](https://github.com/MarshallOfSound/OpenLog/releases)
 2. You can customise a few parts of OpenLog by modifying the `config.inc.json` in the root OpenLog directory.  You can change the `user` and `password` values.  As well as changing the port that OpenLog runs on.
 3. Once you have modified those values you can build you own version of OpenLog by running these commands in the root OpenLog directory
+
     ````bash
     npm install -g grunt-cli
     npm install
@@ -36,11 +40,13 @@ Installation
     ````
 
 4. You can now include the `dist/capture.min.js` file on any page you want to capture the errors and logs for
+
    ````html
     <script src="path/to/capture.min.js" type="text/javascript" language="javascript"></script>
     ````
 5. Upload the entire OpenLog directory **(leave behind `node_modules`)** to your server and from the root OpenLog directory run
-    ````
+
+    ````bash
     npm install -g grunt-cli
     npm install
     grunt build
