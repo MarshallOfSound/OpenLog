@@ -45,7 +45,6 @@ var Logger = function() {
             break;
         }
     }
-    console.log(this.SERVER);
 };
 Logger.prototype = {
     console: function(msg) {
