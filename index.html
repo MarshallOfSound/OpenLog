@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Openlog by MarshallOfSound</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Openlog</h1>
+      <h2 class="project-tagline">An easy way to aggregate client side logging</h2>
+      <a href="https://github.com/MarshallOfSound/OpenLog" class="btn">View on GitHub</a>
+      <a href="https://github.com/MarshallOfSound/OpenLog/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/MarshallOfSound/OpenLog/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="openlog---an-easy-way-to-aggregate-client-side-logging" class="anchor" href="#openlog---an-easy-way-to-aggregate-client-side-logging" aria-hidden="true"><span class="octicon octicon-link"></span></a>OpenLog - An easy way to aggregate client side logging</h1>
+
+<p>OpenLog helps you track down client side javascript errors that you can never seem to replicate on your machine.  Now errors and stack traces that happen on any machine will be readily available to you.    </p>
+
+<h3>
+<a id="tiny-overhead-client-side-plugin-is--1kb-gzipped" class="anchor" href="#tiny-overhead-client-side-plugin-is--1kb-gzipped" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tiny overhead, client-side plugin is &lt; 1kb gzipped!!!</h3>
+
+<h2>
+<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<h5>
+<a id="simple" class="anchor" href="#simple" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple</h5>
+
+<ol>
+<li>Download the latest release from the <a href="https://github.com/MarshallOfSound/OpenLog/releases">Github Releases</a>
+</li>
+<li>
+<p>Include the <code>dist/capture.min.js</code> file on any page you want to capture the errors and logs for  </p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/capture.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">language</span>=<span class="pl-s"><span class="pl-pds">"</span>javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+</li>
+<li>
+<p>Upload the entire release directory to your server and from the root OpenLog directory run</p>
+
+<div class="highlight highlight-bash"><pre>npm install
+node server/server.js</pre></div>
+</li>
+<li>
+<p>Access your instance of OpenLog at <a href="http://your-domain.here:4783">http://your-domain.here:4783</a>, the default login credentials are</p>
+
+<pre><code>username: openlog
+password: password
+</code></pre>
+</li>
+<li>That's it... No, seriously, that is it :)</li>
+</ol>
+
+<h5>
+<a id="advanced" class="anchor" href="#advanced" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced</h5>
+
+<ol>
+<li>Download the latest release from the <a href="https://github.com/MarshallOfSound/OpenLog/releases">Github Releases</a>
+</li>
+<li>You can customise a few parts of OpenLog by modifying the <code>config.inc.json</code> in the root OpenLog directory.  You can change the <code>user</code> and <code>password</code> values.  As well as changing the port that OpenLog runs on.</li>
+<li>
+<p>Once you have modified those values you can build you own version of OpenLog by running these commands in the root OpenLog directory</p>
+
+<div class="highlight highlight-bash"><pre>npm install -g grunt-cli
+npm install
+grunt build</pre></div>
+</li>
+<li>
+<p>You can now include the <code>dist/capture.min.js</code> file on any page you want to capture the errors and logs for</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/capture.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">language</span>=<span class="pl-s"><span class="pl-pds">"</span>javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+</li>
+<li>
+<p>Upload the entire OpenLog directory <strong>(leave behind <code>node_modules</code>)</strong> to your server and from the root OpenLog directory run</p>
+
+<div class="highlight highlight-bash"><pre>npm install -g grunt-cli
+npm install
+grunt build
+node  server/server.js</pre></div>
+</li>
+</ol>
+
+<h2>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>If you are already logging using <code>console.log</code>, <code>console.info</code>, <code>console.warn</code> and <code>console.error</code> then OpenLog requires no extra work at all.  It will capture errors globally on your page and listen to calls to the above <code>console</code> functions.  </p>
+
+<p>If you aren't currently logging using those functions you can either start logging with those functions, or call the OpenLog functions which are.<br>
+<code>Log.info(arguments)</code>, <code>Log.warn(arguments)</code>, <code>Log.error(arguments)</code>.  <code>Log</code> is a globally defined object</p>
+
+<p>If you don't want to capture certain logging types you simply add a <code>data-capture</code> parameter to the script tag that loaded the <code>capture.min.js</code> file and set it to be the types of logs you wish to capture.  For instance if you only want error logs
+<code>data-capture="error"</code>, or if you want error and warning logs <code>data-capture="warn error"</code>.</p>
+
+<p>If your server is not runinng in the expected / default location (the hostname the script is included on at port 4783) you can specify the logging URL by setting a <code>data-log-url="&lt;YOUR URL HERE&gt;"</code> attribute on the script tag that loaded the <code>capture.min.js</code>.</p>
+
+<h2>
+<a id="updating-openlog" class="anchor" href="#updating-openlog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updating OpenLog</h2>
+
+<p>Fancy, smooth, no data loss updating method coming soon :)</p>
+
+<h2>
+<a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<p>All PR's and issues are welcomed with open arms, just fork make your magical new feature or bugfix and throw up a PR to master.</p>
+
+<h2>
+<a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
+
+<p><code>node.js</code> &gt; 0.10
+<code>npm</code></p>
+
+<h2>
+<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
+
+<p>Samuel Attard - <a href="mailto:me@samuelattard.com">me@samuelattard.com</a> - <a href="https://twitter.com/marshallofsound">https://twitter.com/marshallofsound</a> - <a href="https://www.samuelattard.com">https://www.samuelattard.com</a></p>
+
+<h2>
+<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p>OpenLog is licensed under the MIT License - see the LICENSE file for details</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/MarshallOfSound/OpenLog">Openlog</a> is maintained by <a href="https://github.com/MarshallOfSound">MarshallOfSound</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
