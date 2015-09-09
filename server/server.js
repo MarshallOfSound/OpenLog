@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var express = require('express'),
     compression = require('compression'),
     bodyParser = require('body-parser'),
@@ -7,7 +9,7 @@ var express = require('express'),
     execSync = require('sync-exec'),
     config = JSON.parse(fs.readFileSync(__dirname + '/../config.inc.json')),
     store = (fs.existsSync(__dirname + '/store') ? null : fs.mkdirSync(__dirname + '/store')),
-    db = new Engine.Db('store', {}),
+    db = new Engine.Db(__dirname + '/store', {}),
     collection = db.collection("log_storage"),
     app = express();
 
