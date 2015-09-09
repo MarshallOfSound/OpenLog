@@ -1,13 +1,15 @@
 var express = require('express'),
+    path = require('path'),
+    rootDir = path.dirname(require.main.filename) + '/..',
     compression = require('compression'),
     bodyParser = require('body-parser'),
     Engine = require('tingodb')(),
     basicAuth = require('basic-auth'),
     fs = require('fs'),
     execSync = require('sync-exec'),
-    config = JSON.parse(fs.readFileSync('../config.inc.json')),
-    store = (fs.existsSync('./store') ? null : fs.mkdirSync('./store')),
-    db = new Engine.Db('store', {}),
+    config = JSON.parse(fs.readFileSync(rootDir + '/config.inc.json')),
+    store = (fs.existsSync(rootDir + '/server/store') ? null : fs.mkdirSync('./store')),
+    db = new Engine.Db(rootDir + '/server/store', {}),
     collection = db.collection("log_storage"),
     app = express();
 
@@ -23,9 +25,9 @@ function logColor(msg, color) {
 }
 
 // First lets make sure the server files have been generated
-if (!(fs.existsSync('./public') && fs.existsSync('./public/css') && fs.existsSync('./public/fonts') && fs.existsSync('./public/js'))) {
+if (!(fs.existsSync(rootDir + '/server/public') && fs.existsSync(rootDir + '/server/public/css') && fs.existsSync(rootDir + '/server/public/fonts') && fs.existsSync(rootDir + '/server/public/js'))) {
     console.warn("Server doesn't appear to be built, attempting to build now");
-    var buildLog = execSync('grunt build', {cwd: '../'});
+    var buildLog = execSync('grunt build', {cwd: rootDir});
     if (buildLog.stderr === '' && buildLog.status === 0) {
         console.log(logColor('Server built successfully', 'green'));
     } else {
@@ -77,12 +79,13 @@ app.use(function(req, res, next) {
 // Setup the HTML engine
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
+app.set('views', rootDir + '/server/views');
 
 // Enable gzip compression
 app.use(compression());
 
 // Make the public directory public
-app.use(express.static('public'));
+app.use(express.static(rootDir + '/server/public'));
 
 // Enable JSON body reading
 app.use(bodyParser.json());
@@ -97,9 +100,9 @@ app.get('/', function(req, res) {
 
 // Require the route files
 // The post route to receive logs
-require('./routes/capture_post')(app, collection, err);
+require(rootDir + '/server/routes/capture_post')(app, collection, err);
 // The REST routes for the OpenLog console
-require('./routes/rest')(app, collection, err);
+require(rootDir + '/server/routes/rest')(app, collection, err);
 
 console.log("OpenLog server listening on port:", logColor(PORT, 'blue'));
 
