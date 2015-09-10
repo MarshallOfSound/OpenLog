@@ -20,84 +20,98 @@
 
     <section class="main-content">
       <h1>
-<a id="openlog---an-easy-way-to-aggregate-client-side-logging" class="anchor" href="#openlog---an-easy-way-to-aggregate-client-side-logging" aria-hidden="true"><span class="octicon octicon-link"></span></a>OpenLog - An easy way to aggregate client side logging</h1>
+<a id="openlog---track-client-side-javascript-errors-in-real-time" class="anchor" href="#openlog---track-client-side-javascript-errors-in-real-time" aria-hidden="true"><span class="octicon octicon-link"></span></a>OpenLog - Track client side Javascript errors in real time.</h1>
 
-<p>OpenLog helps you track down client side javascript errors that you can never seem to replicate on your machine.  Now errors and stack traces that happen on any machine will be readily available to you.    </p>
-
-<h3>
-<a id="tiny-overhead-client-side-plugin-is--1kb-gzipped" class="anchor" href="#tiny-overhead-client-side-plugin-is--1kb-gzipped" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tiny overhead, client-side plugin is &lt; 1kb gzipped!!!</h3>
+<p>OpenLog is a lightweight front end Javascript plugin (&lt; 1kb gzipped!) that sends your user's console errors &amp; warnings in real time to a dynamic dashboard built with Node.</p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
 
-<h5>
-<a id="simple" class="anchor" href="#simple" aria-hidden="true"><span class="octicon octicon-link"></span></a>Simple</h5>
+<ol>
+<li>Include the <a href="dist/capture.min.js">dist/capture.min.js</a> file on any page you want to capture the errors and logs for</li>
+</ol>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/capture.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <ol>
-<li>Download the latest release from the <a href="https://github.com/MarshallOfSound/OpenLog/releases">Github Releases</a>
+<li>Install globally with <a href="https://www.npmjs.com/about">npm</a>: <code>npm install -g openlog</code>
 </li>
-<li>
-<p>Include the <code>dist/capture.min.js</code> file on any page you want to capture the errors and logs for  </p>
+<li>Start the open log server: <code>openlog</code>
+</li>
+</ol>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/capture.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">language</span>=<span class="pl-s"><span class="pl-pds">"</span>javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
-</li>
-<li>
-<p>Upload the entire release directory to your server and from the root OpenLog directory run</p>
-
-<div class="highlight highlight-bash"><pre>npm install
-node server/server.js</pre></div>
-</li>
-<li>
-<p>Access your instance of OpenLog at <a href="http://your-domain.here:4783">http://your-domain.here:4783</a>, the default login credentials are</p>
+<p>...and that's it! Now you can access your instance of OpenLog at <a href="http://127.0.0.1:4783">http://127.0.0.1:4783</a>. The default login credentials are:</p>
 
 <pre><code>username: openlog
 password: password
 </code></pre>
-</li>
-<li>That's it... No, seriously, that is it :)</li>
-</ol>
 
-<h5>
-<a id="advanced" class="anchor" href="#advanced" aria-hidden="true"><span class="octicon octicon-link"></span></a>Advanced</h5>
+<h2>
+<a id="changing-settings" class="anchor" href="#changing-settings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Changing Settings</h2>
 
-<ol>
-<li>Download the latest release from the <a href="https://github.com/MarshallOfSound/OpenLog/releases">Github Releases</a>
-</li>
-<li>You can customise a few parts of OpenLog by modifying the <code>config.inc.json</code> in the root OpenLog directory.  You can change the <code>user</code> and <code>password</code> values.  As well as changing the port that OpenLog runs on.</li>
-<li>
-<p>Once you have modified those values you can build you own version of OpenLog by running these commands in the root OpenLog directory</p>
+<p>Configuration options for OpenLog are set in <code>/config.inc.json</code>. To find where your copy of OpenLog is installed, run the following command:</p>
+
+<div class="highlight highlight-bash"><pre>$ npm root -g
+<span class="pl-k">&gt;</span> /usr/local/lib/node_modules</pre></div>
+
+<p>This command returns the path where global npm packages are installed on your machine. Once you know this path, you can visit the OpenLog directory with: <code>cd &lt;insert_node_path_here&gt;/openlog</code>. You can then modify the <code>/config.inc.json</code> file...</p>
+
+<table>
+<thead>
+<tr>
+<th>Setting</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Username</td>
+<td>Username used to access the admin panel with. Default: <code>openlog</code>
+</td>
+</tr>
+<tr>
+<td>Password</td>
+<td>Password used to access the admin panel with. Default: <code>password</code>
+</td>
+</tr>
+<tr>
+<td>Port</td>
+<td>The server port that the OpenLog admin panel runs on. Default: <code>4783</code>
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>Once you have modified those values you can build your own version of OpenLog by running these commands in the root OpenLog directory:</p>
 
 <div class="highlight highlight-bash"><pre>npm install -g grunt-cli
 npm install
 grunt build</pre></div>
-</li>
-<li>
-<p>You can now include the <code>dist/capture.min.js</code> file on any page you want to capture the errors and logs for</p>
 
-<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/capture.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">language</span>=<span class="pl-s"><span class="pl-pds">"</span>javascript<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
-</li>
-<li>
-<p>Upload the entire OpenLog directory <strong>(leave behind <code>node_modules</code>)</strong> to your server and from the root OpenLog directory run</p>
-
-<div class="highlight highlight-bash"><pre>npm install -g grunt-cli
-npm install
-grunt build
-node  server/server.js</pre></div>
-</li>
-</ol>
+<p>Amungst other things, this will build a new <code>dist/capture.min.js</code> file. It's now simply a matter of including this new file on your HTML pages, and starting up the OpenLog server again with your new compiled settings.</p>
 
 <h2>
 <a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>If you are already logging using <code>console.log</code>, <code>console.info</code>, <code>console.warn</code> and <code>console.error</code> then OpenLog requires no extra work at all.  It will capture errors globally on your page and listen to calls to the above <code>console</code> functions.  </p>
+<p>If you are already logging using <code>console.log</code>, <code>console.info</code>, <code>console.warn</code> and <code>console.error</code> then OpenLog requires no extra work at all.  It will capture errors globally on your page and listen to calls to the above <code>console</code> functions. Alternatively, if you don't want to explicitly log information to the clients console, you can use OpenLog's built in methods:</p>
 
-<p>If you aren't currently logging using those functions you can either start logging with those functions, or call the OpenLog functions which are.<br>
-<code>Log.info(arguments)</code>, <code>Log.warn(arguments)</code>, <code>Log.error(arguments)</code>.  <code>Log</code> is a globally defined object</p>
+<ul>
+<li><code>Log.error();</code></li>
+<li><code>Log.warn();</code></li>
+<li><code>Log.info();</code></li>
+</ul>
 
-<p>If you don't want to capture certain logging types you simply add a <code>data-capture</code> parameter to the script tag that loaded the <code>capture.min.js</code> file and set it to be the types of logs you wish to capture.  For instance if you only want error logs
-<code>data-capture="error"</code>, or if you want error and warning logs <code>data-capture="warn error"</code>.</p>
+<p><code>Log</code> is a globally defined object by the <code>capture.min.js</code> file.</p>
 
-<p>If your server is not runinng in the expected / default location (the hostname the script is included on at port 4783) you can specify the logging URL by setting a <code>data-log-url="&lt;YOUR URL HERE&gt;"</code> attribute on the script tag that loaded the <code>capture.min.js</code>.</p>
+<p>If you don't want to capture certain logging types you simply add a <code>data-capture</code> parameter to the script tag that loaded the <code>capture.min.js</code> file and set it to be the types of logs you wish to capture.  For instance, if you only want error logs:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/capture.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">data-capture</span>=<span class="pl-s"><span class="pl-pds">"</span>error<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>...or if you want error and warning logs <code>data-capture="warn error"</code> etc etc.</p>
+
+<p>By default, OpenLog assumes that the dashboard is running on the same domain as the frontend it sends logs from (default port is 4783). To change this, you can specify the logging URL by setting a <code>data-log-url=""</code> attribute on the script tag that loaded the <code>capture.min.js</code>:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>path/to/capture.min.js<span class="pl-pds">"</span></span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">data-log-url</span>=<span class="pl-s"><span class="pl-pds">"</span>http://logs.mydomain.com<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
 
 <h2>
 <a id="updating-openlog" class="anchor" href="#updating-openlog" aria-hidden="true"><span class="octicon octicon-link"></span></a>Updating OpenLog</h2>
@@ -107,13 +121,23 @@ node  server/server.js</pre></div>
 <h2>
 <a id="contributing" class="anchor" href="#contributing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
-<p>All PR's and issues are welcomed with open arms, just fork make your magical new feature or bugfix and throw up a PR to master.</p>
+<p>All PR's and issues are welcomed with open arms.</p>
+
+<ol>
+<li>Fork this repository.</li>
+<li>Create a new branch: <code>git checkout -b my-new-feature</code>.</li>
+<li>Make your changes and add some commits.</li>
+<li>Push your changes to GitHub and send in a pull request to this repository.</li>
+</ol>
 
 <h2>
 <a id="requirements" class="anchor" href="#requirements" aria-hidden="true"><span class="octicon octicon-link"></span></a>Requirements</h2>
 
-<p><code>node.js</code> &gt; 0.10
-<code>npm</code></p>
+<ul>
+<li>
+<code>node.js</code> &gt; 0.10</li>
+<li><code>npm</code></li>
+</ul>
 
 <h2>
 <a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
@@ -123,7 +147,7 @@ node  server/server.js</pre></div>
 <h2>
 <a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
 
-<p>OpenLog is licensed under the MIT License - see the LICENSE file for details</p>
+<p>OpenLog is licensed under the MIT License - see the LICENSE file for details.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/MarshallOfSound/OpenLog">Openlog</a> is maintained by <a href="https://github.com/MarshallOfSound">MarshallOfSound</a>.</span>
