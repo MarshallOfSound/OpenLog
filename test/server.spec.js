@@ -11,6 +11,7 @@ describe('server responds correctly to requests', function () {
             config: JSON.parse(fs.readFileSync(__dirname + '/../config.inc.json')),
             db: new Engine.Db(__dirname, {})
         };
+        fs.createReadStream(__dirname + "/test_log_storage").pipe(fs.createWriteStream(__dirname + "/log_storage"));
         server = require(__dirname + '/../server/server.js');
     });
     afterEach(function () {
