@@ -170,5 +170,5 @@ module.exports = function(grunt) {
     grunt.registerTask('build-server', ['server-css', 'server-js-prod']);
     grunt.registerTask('build', ['build-capture', 'clean:serverPublic', 'build-server']);
 
-    grunt.registerTask('test', ['mochaTest']);
+    grunt.registerTask('test', ['build-server', 'mochaTest']);
 };
