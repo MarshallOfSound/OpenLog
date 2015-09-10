@@ -1,0 +1,198 @@
+{"k":"0000000078","o":"0000000373","v":"001"}
+{"_id":2,"_uid":2,"_dt":1434867081433,"_s":"eefb2929a46f389789e95003139a9915"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867079207,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":2}}
+{"k":"0000000078","o":"0000000393","v":"001"}
+{"_id":3,"_uid":3,"_dt":1434867081435,"_s":"4f976cf05b2bb61e44facdb84fc3d2fb"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867079214,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":3}}
+{"k":"0000000078","o":"0000000378","v":"001"}
+{"_id":4,"_uid":4,"_dt":1434867081435,"_s":"c40997049cc1414d01d23f3d00341ebc"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867079214,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":4}}
+{"k":"0000000078","o":"0000000373","v":"001"}
+{"_id":5,"_uid":5,"_dt":1434867089112,"_s":"654bc0f95bc5a5a8f19f564b0cf223d8"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867085015,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":5}}
+{"k":"0000000078","o":"0000000393","v":"001"}
+{"_id":6,"_uid":6,"_dt":1434867089112,"_s":"c4a5b6b7b557e818a73c946a8c68644e"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867085023,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":6}}
+{"k":"0000000078","o":"0000000378","v":"001"}
+{"_id":7,"_uid":7,"_dt":1434867089112,"_s":"efc87bffd3070213e087429f5d25c74f"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867085023,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":7}}
+{"k":"0000000078","o":"0000000373","v":"001"}
+{"_id":8,"_uid":8,"_dt":1434867089113,"_s":"a921964414b7a09675c854493efabf8e"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867085781,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":8}}
+{"k":"0000000078","o":"0000000393","v":"001"}
+{"_id":9,"_uid":9,"_dt":1434867089113,"_s":"ab7792dfc46cd77442fabac48e9e254c"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867085789,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":9}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":10,"_uid":10,"_dt":1434867089114,"_s":"2b1f38ecbb4fea197cb7350b8ceba5cf"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867085789,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":10}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":11,"_uid":11,"_dt":1434867089115,"_s":"d0182016540e0b15aad180141bf19cf6"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867086281,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":11}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":12,"_uid":12,"_dt":1434867089115,"_s":"da39b4f754efe4333e5d5b4525a85c96"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867086287,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":12}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":13,"_uid":13,"_dt":1434867089116,"_s":"87b5ffff65723330ab5a675d7a5e7aa4"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867086288,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":13}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":14,"_uid":14,"_dt":1434867089116,"_s":"08121aee8b25a48440dcd808d08e7be7"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867087006,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":14}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":15,"_uid":15,"_dt":1434867089116,"_s":"6a2723b9778ef3dc26285eddc5d6b759"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867087014,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":15}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":16,"_uid":16,"_dt":1434867089117,"_s":"5ef4c2f035ce301442d27a5c996ebfd3"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867087014,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":16}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":17,"_uid":17,"_dt":1434867089117,"_s":"d1105f0cc0502d7cb1f448c83a64c5a1"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867087938,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":17}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":18,"_uid":18,"_dt":1434867089118,"_s":"5d7be04d140c0d77d7079918cab81c36"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867087944,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":18}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":19,"_uid":19,"_dt":1434867089119,"_s":"954b8f728d5d8b37d5e9524cb983403a"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867087945,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":19}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":20,"_uid":20,"_dt":1434867141095,"_s":"2a10d6ffa3d0bdcf35eb75fd4a1792f2"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867138091,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":20}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":21,"_uid":21,"_dt":1434867141095,"_s":"fd6763fdb8107f115a3bfe89085bf465"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867138098,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":21}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":22,"_uid":22,"_dt":1434867141096,"_s":"5ae4d006dfb983cb12faa16335b92701"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867138098,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":22}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":23,"_uid":23,"_dt":1434867141096,"_s":"8763277e741c5dd8a0c8c9f7c2bb259e"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867138861,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":23}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":24,"_uid":24,"_dt":1434867141097,"_s":"1b0bc394a4d5f3720d1edb3dd2772436"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867138869,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":24}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":25,"_uid":25,"_dt":1434867141097,"_s":"4bec834cbafe6012083b598bbc353fb3"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867138870,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":25}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":26,"_uid":26,"_dt":1434867141097,"_s":"74c60c697a5dba450c8bbe5b93a4071c"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434867139746,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":26}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":27,"_uid":27,"_dt":1434867141098,"_s":"7f766e6e172d2062fd587381bc86e04d"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434867139753,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":27}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":28,"_uid":28,"_dt":1434867141098,"_s":"5b9c3da297cade64950d9a20e3c8a7fc"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434867139753,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":28}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":29,"_uid":29,"_dt":1438654564345,"_s":"6dc0c9c40f4ba0c152712f56682babc2"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1724)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1434864928593,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":29}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":30,"_uid":30,"_dt":1438654564348,"_s":"410ffb7e8a80953748f34e6c33ff7b30"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1724)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1434864928594,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":30}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":31,"_uid":31,"_dt":1438654564349,"_s":"a30edde722cf363ec5950b8aab5213a8"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1724)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1434864928594,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":31}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":32,"_uid":32,"_dt":1438654564349,"_s":"8322bf21d23e3ae271c59f6299fcdfd5"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654562839,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":32}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":33,"_uid":33,"_dt":1438654564349,"_s":"aeecf3222c91aea0de2f1b6dc76c4504"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654562840,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":33}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":34,"_uid":34,"_dt":1438654564349,"_s":"ec9a3ec6c5c645af7ae8ee99ac275005"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654562840,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":34}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":35,"_uid":35,"_dt":1438654588368,"_s":"a993ee5ea274fb2f1b0cac88d3e19557"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654587365,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":35}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":36,"_uid":36,"_dt":1438654588368,"_s":"6620563e3d830d84c990893d9db49cae"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654587375,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":36}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":37,"_uid":37,"_dt":1438654588369,"_s":"3fd1db53f08a076b50dd17435de19605"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1673)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654587376,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":37}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":38,"_uid":38,"_dt":1438654922723,"_s":"cee1e8cca47146def76ee5e6894854a5"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654921416,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":38}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":39,"_uid":39,"_dt":1438654922724,"_s":"2f6fa700a81470f5c36a13cab9bed6df"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654921416,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":39}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":40,"_uid":40,"_dt":1438654922725,"_s":"274e9399bedc582bef7d06a012d4332e"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654921416,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":40}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":41,"_uid":41,"_dt":1438654948165,"_s":"374015b34946e3befb292d99160802a9"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654943459,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":41}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":42,"_uid":42,"_dt":1438654948165,"_s":"ecc8203e20c3ad1da8aa7ad78c1e9a8f"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654943459,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":42}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":43,"_uid":43,"_dt":1438654948166,"_s":"0fe8758e218370372d3f6f27bbc90a84"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654943459,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":43}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":44,"_uid":44,"_dt":1438654948167,"_s":"398b02256c4ff1e32dc4453ec2791e54"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654947172,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":44}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":45,"_uid":45,"_dt":1438654948169,"_s":"cff50a7f3f141cd0df21a323e6afd33d"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654947173,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":45}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":46,"_uid":46,"_dt":1438654948170,"_s":"fad3419a2efc9060d35f5ae4f4785de4"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654947174,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":46}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":47,"_uid":47,"_dt":1438654993631,"_s":"4dcb8c7bddb366da6dc99821e83ed8aa"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654974922,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":47}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":48,"_uid":48,"_dt":1438654993632,"_s":"38780b79440db07697c1d0b191808f83"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654974923,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":48}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":49,"_uid":49,"_dt":1438654993632,"_s":"4163b4fdc8fad0c515a1c4edef0f773f"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654974923,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":49}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":50,"_uid":50,"_dt":1438654993632,"_s":"909e1b982a2f72636c2899202b957ead"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654976117,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":50}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":51,"_uid":51,"_dt":1438654993633,"_s":"cd2482ab4227fbe417657616df77f689"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654976117,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":51}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":52,"_uid":52,"_dt":1438654993633,"_s":"605a350e6344140ea3beb573ccafbf33"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654976118,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":52}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":53,"_uid":53,"_dt":1438654993633,"_s":"4b586e0842fb0b41372203ec5752b596"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654976627,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":53}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":54,"_uid":54,"_dt":1438654993634,"_s":"9138b42e6aef6753dd5210a2b78d57c2"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654976633,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":54}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":55,"_uid":55,"_dt":1438654993635,"_s":"3a604edd5672022233369f8c56b92e9d"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654976633,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":55}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":56,"_uid":56,"_dt":1438654993635,"_s":"50d4988028cb41db12f11dc2039c55d4"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654981215,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":56}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":57,"_uid":57,"_dt":1438654993636,"_s":"a6bdef55f43092e15e99cfac15e081b8"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654981216,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":57}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":58,"_uid":58,"_dt":1438654993637,"_s":"7eaf84cbeb50313eca9f0844b99f0136"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654981216,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":58}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":59,"_uid":59,"_dt":1438654993637,"_s":"bf83d2e050d9e34659750531ef80a02b"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654985786,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":59}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":60,"_uid":60,"_dt":1438654993637,"_s":"63659f103204f60db834352113e00dc1"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654985787,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":60}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":61,"_uid":61,"_dt":1438654993637,"_s":"674e350b73067b5159f7fd924d9a529a"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654985787,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":61}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":62,"_uid":62,"_dt":1438654993638,"_s":"0718dd9ab89be785d964a0f4d72ddf1d"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438654992633,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":62}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":63,"_uid":63,"_dt":1438654993638,"_s":"ec03dbfce019d348d4ad4920621502b2"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438654992633,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":63}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":64,"_uid":64,"_dt":1438654993638,"_s":"ffa804ecc15b9c43b376bff92eb71760"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438654992633,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":64}}
+{"k":"0000000080","o":"0000000374","v":"001"}
+{"_id":65,"_uid":65,"_dt":1438655708327,"_s":"8819b0a7c575c2b537c727c6017def2b"}
+{"type":"info","message":{"0":"This page was loaded"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as info] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:11:13","time":1438655707023,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":65}}
+{"k":"0000000080","o":"0000000394","v":"001"}
+{"_id":66,"_uid":66,"_dt":1438655708327,"_s":"f06ca2e6ce9e74f2472897e11bfd5b3a"}
+{"type":"warn","message":{"0":"Was this page actually loaded correctly?"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as warn] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:12:13","time":1438655707023,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":66}}
+{"k":"0000000080","o":"0000000379","v":"001"}
+{"_id":67,"_uid":67,"_dt":1438655708329,"_s":"a623b3f4a8e5ed55d3ea1fdf023a41e6"}
+{"type":"error","message":{"0":"Oh darn, it didn't load"},"trace":"Error\n    at Error (native)\n    at Console.console.(anonymous function) [as error] (http://localhost:63342/OpenLog/dist/capture.min.js:1:1760)\n    at http://localhost:63342/OpenLog/demo.html:13:13","time":1438655707023,"page":"localhost:63342/OpenLog/demo.html","IP":"127.0.0.1","_id":{"$wrap":"$oid","v":67}}

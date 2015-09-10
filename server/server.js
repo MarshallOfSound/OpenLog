@@ -106,4 +106,4 @@ require(__dirname + '/routes/rest')(app, collection, err);
 
 console.log("OpenLog server listening on port:", logColor(PORT, 'blue'));
 
-app.listen(PORT);
+module.exports = app.listen(PORT);

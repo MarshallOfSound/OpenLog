@@ -127,6 +127,14 @@ module.exports = function(grunt) {
                 }]
             }
         },
+        mochaTest: {
+            test: {
+                options: {
+                    reporter: 'spec'
+                },
+                src: ['test/*.spec.js']
+            }
+        },
         watch: {
             capture: {
                 files: ['js/capture.js'],
@@ -152,6 +160,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-text-replace');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-mocha-test');
 
     grunt.registerTask('default', ['jshint']);
     grunt.registerTask('server-css', ['less', 'concat:libCSS', 'cssmin:lib', 'copy:fonts']);
@@ -160,4 +169,6 @@ module.exports = function(grunt) {
     grunt.registerTask('build-capture', ['jshint:dist', 'replace:serverPort', 'uglify:dist']);
     grunt.registerTask('build-server', ['server-css', 'server-js-prod']);
     grunt.registerTask('build', ['build-capture', 'clean:serverPublic', 'build-server']);
+
+    grunt.registerTask('test', ['mochaTest']);
 };

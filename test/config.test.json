@@ -1,0 +1,9 @@
+{
+  "auth": [{
+    "user": "openlog",
+    "password": "password"
+  }],
+  "server": {
+    "port": 4782
+  }
+}
