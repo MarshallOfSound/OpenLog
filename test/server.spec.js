@@ -4,6 +4,7 @@ var request = require('supertest'),
 describe('server responds correctly to requests', function () {
     var AUTH = 'Basic b3BlbmxvZzpwYXNzd29yZA==',
         server;
+    
     beforeEach(function () {
         fs.renameSync(__dirname + '/../config.inc.json', __dirname + '/../test/original.json');
         fs.renameSync(__dirname + '/../test/config.test.json', __dirname + '/../config.inc.json');
