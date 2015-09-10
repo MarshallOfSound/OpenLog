@@ -1,30 +1,20 @@
 var request = require('supertest'),
-    fs = require('fs');
-
-// Initial run of the server to configure data stores
-require(__dirname + '/../server/server.js').close();
+    fs = require('fs'),
+    Engine = require('tingodb')();
 
 describe('server responds correctly to requests', function () {
     var AUTH = 'Basic b3BlbmxvZzpwYXNzd29yZA==',
         server;
-    
+
     beforeEach(function () {
-        fs.renameSync(__dirname + '/../config.inc.json', __dirname + '/../test/original.json');
-        fs.renameSync(__dirname + '/../test/config.test.json', __dirname + '/../config.inc.json');
-        try {
-            fs.renameSync(__dirname + '/../server/store/log_storage', __dirname + '/../test/original_storage');
-            fs.renameSync(__dirname + '/../test/test_log_storage', __dirname + '/../server/store/log_storage');
-        } catch (e) {
-            // Do nothing
-        }
+        process.args = {
+            config: JSON.parse(fs.readFileSync(__dirname + '/../config.inc.json')),
+            db: new Engine.Db(__dirname, {})
+        };
         server = require(__dirname + '/../server/server.js');
     });
     afterEach(function () {
         try {
-            fs.renameSync(__dirname + '/../config.inc.json', __dirname + '/../test/config.test.json');
-            fs.renameSync(__dirname + '/../test/original.json', __dirname + '/../config.inc.json');
-            fs.renameSync(__dirname + '/../server/store/log_storage', __dirname + '/../test/test_log_storage');
-            fs.renameSync(__dirname + '/../test/original_storage', __dirname + '/../server/store/log_storage');
             server.close();
             server = null;
         } catch (e) {

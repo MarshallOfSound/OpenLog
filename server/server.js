@@ -13,6 +13,16 @@ var express = require('express'),
     collection = db.collection("log_storage"),
     app = express();
 
+if (process.args) {
+    if (process.args.config) {
+        config = process.args.config;
+    }
+    if (process.args.db) {
+        db = process.args.db;
+        collection = db.collection("log_storage");
+    }
+}
+
 const PORT = config.server.port;
 
 // Simple function to color text in the console output
