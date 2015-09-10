@@ -1,4 +1,4 @@
-OpenLog - Track client side Javascript errors in real time.
+OpenLog - Track client side Javascript errors in real time. [![Build Status](https://travis-ci.org/MarshallOfSound/OpenLog.svg?branch=master)](https://travis-ci.org/MarshallOfSound/OpenLog)
 ==========================================================
 
 OpenLog is a lightweight front end Javascript plugin (< 1kb gzipped!) that sends your user's console errors & warnings in real time to a dynamic dashboard built with Node.
