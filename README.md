@@ -1,5 +1,5 @@
-OpenLog - An easy way to aggregate client side logging
-======================================================
+OpenLog - Track client side Javascript errors in real time.
+==========================================================
 
 OpenLog is a lightweight front end Javascript plugin (< 1kb gzipped!) that sends your user's console errors & warnings in real time to a dynamic dashboard built with Node.
 
