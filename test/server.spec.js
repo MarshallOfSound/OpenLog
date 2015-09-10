@@ -1,6 +1,9 @@
 var request = require('supertest'),
     fs = require('fs');
 
+// Initial run of the server to configure data stores
+require(__dirname + '/../server/server.js').close();
+
 describe('server responds correctly to requests', function () {
     var AUTH = 'Basic b3BlbmxvZzpwYXNzd29yZA==',
         server;
