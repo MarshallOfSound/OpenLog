@@ -11,8 +11,12 @@ describe('server responds correctly to requests', function () {
     beforeEach(function () {
         fs.renameSync(__dirname + '/../config.inc.json', __dirname + '/../test/original.json');
         fs.renameSync(__dirname + '/../test/config.test.json', __dirname + '/../config.inc.json');
-        fs.renameSync(__dirname + '/../server/store/log_storage', __dirname + '/../test/original_storage');
-        fs.renameSync(__dirname + '/../test/test_log_storage', __dirname + '/../server/store/log_storage');
+        try {
+            fs.renameSync(__dirname + '/../server/store/log_storage', __dirname + '/../test/original_storage');
+            fs.renameSync(__dirname + '/../test/test_log_storage', __dirname + '/../server/store/log_storage');
+        } catch (e) {
+            // Do nothing
+        }
         server = require(__dirname + '/../server/server.js');
     });
     afterEach(function () {
