@@ -58,6 +58,7 @@ module.exports = function(app, collection, sendError) {
                     stats.pages[logs[i].page]++;
                 }
             }
+            stats.pages.total = stats.quantity.error;
             for (var week = 0; week < 10; week++) {
                 tmp = {week: week, total: 0, error: 0, warn: 0, info: 0};
                 start = moment(end);
