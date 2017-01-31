@@ -29,6 +29,7 @@ var Logger = function() {
     for (i = 0; i < tags.length; i++) {
         d = tags[i].getAttribute('data-capture');
         url = tags[i].getAttribute('data-log-url');
+        url = (/\/log\/?$/i.test(url)) ? url : url + '/log';
         // This option is set to only send logs when running on a specific hostname
         r = tags[i].getAttribute('data-restrict-to');
         if (url) {
