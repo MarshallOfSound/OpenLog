@@ -52,16 +52,8 @@ var Logger = function() {
     }
 
     this.oneEquals = function(optionsStr, target) {
-        if ( !optionsStr || !target ) { return false; }
-        y = false;
-        a = optionsStr.split(" ");
-        a.forEach(function(s) {
-            if ( s === target ) {
-                y = true;
-                return;
-            }
-        });
-        return y;
+        if (!optionsStr || !target) { return false; }
+        return optionsStr.split(' ').indexOf(target) !== -1;
     };
 };
 Logger.prototype = {
