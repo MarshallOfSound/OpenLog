@@ -75,7 +75,7 @@ If you don't want to capture certain logging types you simply add a `data-captur
 By default, OpenLog assumes that the dashboard is running on the same domain as the frontend it sends logs from (default port is 4783). To change this, you can specify the logging URL by setting a `data-log-url=""` attribute on the script tag that loaded the `capture.min.js`:
 
 ````html
-<script src="path/to/capture.min.js" type="text/javascript" data-log-url="http://logs.mydomain.com"></script>
+<script src="path/to/capture.min.js" type="text/javascript" data-log-url="http://logs.mydomain.com/log"></script>
 ````
 
 ### Domain Limiting
