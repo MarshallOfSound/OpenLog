@@ -29,6 +29,8 @@ var Logger = function() {
     for (i = 0; i < tags.length; i++) {
         d = tags[i].getAttribute('data-capture');
         url = tags[i].getAttribute('data-log-url');
+        // This option is set to only send logs when running on a specific hostname
+        r = tags[i].getAttribute('data-restrict-to');
         if (url) {
             this.SERVER = url;
         }
@@ -44,7 +46,23 @@ var Logger = function() {
             }
             break;
         }
+        if (r) {
+            this.DOMAIN_RESTRICTION = r;
+        }
     }
+
+    this.oneEquals = function(optionsStr, target) {
+        if ( !optionsStr || !target ) { return false; }
+        y = false;
+        a = optionsStr.split(" ");
+        a.forEach(function(s) {
+            if ( s === target ) {
+                y = true;
+                return;
+            }
+        });
+        return y;
+    };
 };
 Logger.prototype = {
     console: function(msg) {
@@ -78,7 +96,8 @@ Logger.prototype = {
     },
     _send: function(type, message, t) {
         var a = this.LOGGING_LEVELS[type] || false;
-        if (a && this.LOGGING_LEVELS[type]) {
+        var b = this.oneEquals(this.DOMAIN_RESTRICTION, this.l.hostname) || !this.DOMAIN_RESTRICTION;
+        if ( a && b && this.LOGGING_LEVELS[type] ) {
             this.queue.push(JSON.stringify({type: type, message: message, trace: (t || Error().trace), time: Date.now(), page: this.l.href}));
         }
     },

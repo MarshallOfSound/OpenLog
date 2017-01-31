@@ -50,7 +50,7 @@ grunt build
 
 Amungst other things, this will build a new `dist/capture.min.js` file. It's now simply a matter of including this new file on your HTML pages, and starting up the OpenLog server again with your new compiled settings.
 
-Usage
+Usage / Other Configuration
 ------------
 If you are already logging using `console.log`, `console.info`, `console.warn` and `console.error` then OpenLog requires no extra work at all.  It will capture errors globally on your page and listen to calls to the above `console` functions. Alternatively, if you don't want to explicitly log information to the clients console, you can use OpenLog's built in methods:
 
@@ -60,6 +60,8 @@ If you are already logging using `console.log`, `console.info`, `console.warn` a
 
 `Log` is a globally defined object by the `capture.min.js` file.
 
+### Error Limiting
+
 If you don't want to capture certain logging types you simply add a `data-capture` parameter to the script tag that loaded the `capture.min.js` file and set it to be the types of logs you wish to capture.  For instance, if you only want error logs:
 
 ````html
@@ -68,11 +70,24 @@ If you don't want to capture certain logging types you simply add a `data-captur
 
 ...or if you want error and warning logs `data-capture="warn error"` etc etc.
 
+### Modify OpenLog Server URL
+
 By default, OpenLog assumes that the dashboard is running on the same domain as the frontend it sends logs from (default port is 4783). To change this, you can specify the logging URL by setting a `data-log-url=""` attribute on the script tag that loaded the `capture.min.js`:
 
 ````html
 <script src="path/to/capture.min.js" type="text/javascript" data-log-url="http://logs.mydomain.com"></script>
 ````
+
+### Domain Limiting
+
+A final configurable option is to use `data-restrict-to` parameter on the script tag. This setting allows you to specify domain name(s) permitted to send logs to the OpenLog server, and is particularly useful for reporting console noise only in a staging/production environment (as opposed to developers working locally). By default, OpenLog will send logs from all sources.
+
+````html
+<!-- Use a HOSTNAME, not a full domain like above -->
+<script src="path/to/capture.min.js" type="text/javascript" data-restrict-to="staging.myserver.com"></script>
+````
+
+To restrict multiple domains, use spaces to separate them, eg - `data-restrict-to="staging.myserver.com production.com"`.
 
 Updating OpenLog
 -----------------
