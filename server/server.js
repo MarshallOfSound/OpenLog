@@ -28,7 +28,9 @@ const PORT = config.server.port;
 // Simple function to color text in the console output
 function logColor(msg, color) {
     var colors = {
+        red: ['\x1b[31m', '\x1b[0m'],
         green: ['\x1b[32m', '\x1b[0m'],
+        yellow: ['\x1b[33m', '\x1b[0m'],
         blue: ['\x1b[34m', '\x1b[0m']
     };
     return (!colors[color] ? msg : colors[color][0] + msg + colors[color][1]);
@@ -41,8 +43,8 @@ if (!(fs.existsSync(__dirname + '/public') && fs.existsSync(__dirname + '/public
     if (buildLog.stderr === '' && buildLog.status === 0) {
         console.log(logColor('Server built successfully', 'green'));
     } else {
-        console.error(buildLog.stderr);
-        console.error('Server failed to build, please try building manually with the \'grunt build\' command');
+        console.error(logColor(buildLog.stderr, 'yellow'));
+        console.error(logColor('Server failed to build, please try building manually with the \'grunt build\' command', 'yellow'));
         return false;
     }
 
