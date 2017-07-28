@@ -28,9 +28,9 @@ const PORT = config.server.port;
 // Simple function to color text in the console output
 function logColor(msg, color) {
     var colors = {
-	red: ['\x1b[31m', '\x1b[0m'],
+        red: ['\x1b[31m', '\x1b[0m'],
         green: ['\x1b[32m', '\x1b[0m'],
-	yellow: ['\x1b[33m', '\x1b[0m'],
+        yellow: ['\x1b[33m', '\x1b[0m'],
         blue: ['\x1b[34m', '\x1b[0m']
     };
     return (!colors[color] ? msg : colors[color][0] + msg + colors[color][1]);
